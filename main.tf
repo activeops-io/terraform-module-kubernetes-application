@@ -1,6 +1,8 @@
-provider "kubernetes" {
-}
-
 terraform {
-  required_version = "~> 0.12"
+  required_version = "~> 1.0.1"
+  required_providers {
+    kubernetes = {
+      source = "hashicorp/kubernetes"
+    }
+  }
 }
